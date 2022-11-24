@@ -1,7 +1,8 @@
 include templates/_page-head.pug
     title Dashboard
-body 
+body
+    include templates/components/_header.pug
     h1 Dashboard
     p Welcome to the dashboard #{user.username}!
     a(href="/logout") Logout!
-    
+    include templates/_page-script.pug
