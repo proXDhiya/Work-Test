@@ -3,19 +3,13 @@ include templates/_page-head.pug
     title Dashboard
 body
     include templates/components/_header.pug
-    //-
+
     .container
         .main-dashboard
             h1 Dashboard
             p Welcome to the dashboard 
                 span.username #{user.username}!
             .grid-services
-                a(href="/register-cow") Register Cow
-                a(href="/view-cows") View Cows
-                a(href="/register-milk") Register Milk
-                a(href="/view-milk") View Milk
-                a(href="/register-new-birth") Register New Cow Birth
-                a(href="/register-vaccination") Register Vaccination
-                a(href="/show-vaccination") Show Vaccination History
-    //-
+                include templates/components/_services.pug
+
     include templates/_page-script.pug
