@@ -80,11 +80,14 @@ nav > ul > li > a {
     color: var(--color-primary-background);
     font-weight: var(--font-weight-bold);
     font-size: 1.4rem;
-    padding: var(--spacing-3);
 }
 
 nav > ul > li > a:active {
     color: var(--color-primary-text);
+}
+
+nav > ul > li > p {
+    color: var(--color-primary-background) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,6 +97,15 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: var(--color-primary-text);
     text-decoration: none;
+}
+
+p {
+    color: var(--color-secondary-text);
+}
+
+p > span {
+    color: var(--color-primary-text);
+    font-weight: var(--font-weight-bold);
 }
 
 .btn {
@@ -112,4 +124,10 @@ a {
 .btn:hover {
     background-color: var(--color-secondary-background);
     color: var(--color-primary-background);
+}
+
+.container {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
 }

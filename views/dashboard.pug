@@ -1,8 +1,21 @@
 include templates/_page-head.pug
+    link(rel="stylesheet", href="style/dashboard.css")
     title Dashboard
 body
     include templates/components/_header.pug
-    h1 Dashboard
-    p Welcome to the dashboard #{user.username}!
-    a(href="/logout") Logout!
+    //-
+    .container
+        .main-dashboard
+            h1 Dashboard
+            p Welcome to the dashboard 
+                span.username #{user.username}!
+            .grid-services
+                a(href="/register-cow") Register Cow
+                a(href="/view-cows") View Cows
+                a(href="/register-milk") Register Milk
+                a(href="/view-milk") View Milk
+                a(href="/register-new-birth") Register New Cow Birth
+                a(href="/register-vaccination") Register Vaccination
+                a(href="/show-vaccination") Show Vaccination History
+    //-
     include templates/_page-script.pug

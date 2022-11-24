@@ -1,0 +1,35 @@
+.main-dashboard {
+    margin: var(--spacing-5) auto;
+}
+
+.username {
+    text-decoration: underline;
+}
+
+.grid-services {
+    display: grid;
+    height: 100%;
+    width: auto;
+    margin-top: var(--spacing-6);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.grid-services > a {
+    width: 100%;
+    height: 60px;
+    padding-top: var(--spacing-4);
+    text-align: center;
+    outline: 1px solid var(--color-primary-text);
+    border-radius: 2px;
+    text-decoration: none;
+    color: var(--color-primary-text);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.grid-services > a:hover {
+    background-color: var(--color-primary-text);
+    color: var(--color-primary-background);
+}
