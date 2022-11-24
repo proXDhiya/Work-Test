@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use('/', require('./routers/get-login'));
+app.use('/', require('./routers/login'));
 
 // Listen on port 3000
 app.listen(3000);
