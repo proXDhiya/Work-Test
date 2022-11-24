@@ -1,15 +1,12 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Login Page
-    body 
+include templates/_page-head.pug
+    link(rel="stylesheet" href="/style/login.css")
+    title Login Page
+body
+    div.login
         h1 Login Page
         form(action="/login", method="POST")
-            label(for="username") Username
+            label(for="username") Username :
             input(type="text", name="username", id="username")
-            label(for="password") Password
+            label(for="password") Password :
             input(type="password", name="password", id="password")
-            button(type="submit") Login
+            button(type="submit").btn Login
