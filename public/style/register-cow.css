@@ -9,6 +9,7 @@
     width: 500px;
     margin: var(--spacing-6) auto;
     padding: var(--spacing-5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .register-cow-form > form {

@@ -26,10 +26,12 @@
     color: var(--color-primary-text);
     font-weight: var(--font-weight-bold);
     font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
     transition: all 0.2s ease-in-out;
 }
 
 .grid-services > a:hover {
     background-color: var(--color-primary-text);
     color: var(--color-primary-background);
+    box-shadow: none;
 }

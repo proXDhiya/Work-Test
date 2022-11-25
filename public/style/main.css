@@ -120,12 +120,14 @@ p > span {
     color: var(--color-primary-text);
     background-color: var(--color-primary-background);
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;
     transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
     background-color: var(--color-secondary-background);
     color: var(--color-primary-background);
+    box-shadow: none;
 }
 
 .container {
