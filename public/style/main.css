@@ -43,6 +43,7 @@ body {
     height: minmax(100vh, auto);
     overflow-x: hidden;
     scroll-behavior: smooth;
+    word-spacing: 0.15rem;
 }
 
 nav {
@@ -74,7 +75,7 @@ nav > ul > li:has(p) {
 nav > ul > li:has(ion-icon) {
     font-size: 1.6rem;
     margin-top: 5px;
-    padding: var(--spacing-2);
+    text-align: end;
 }
 
 nav > ul > li > a {
@@ -134,4 +135,35 @@ p > span {
     width: 1200px;
     height: auto;
     margin: 0 auto;
+}
+
+.error-container {
+    padding: var(--spacing-4) var(--spacing-6);
+    background-color: var(--color-error);
+    font-weight: var(--font-weight-bold);
+    width: fit-content;
+    position: fixed;
+    top: -60px;
+    right: 50%;
+    transform: translateX(50%);
+    animation: error 5s ease-in-out forwards;
+}
+
+@keyframes error {
+    0% {
+        top: -60px;
+    }
+    20% {
+        top: 0px;
+    }
+    80% {
+        top: 0px;
+    }
+    100% {
+        top: -60px;
+    }
+}
+
+.error-container > p {
+    color: var(--color-primary-background);
 }

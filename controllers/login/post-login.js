@@ -15,7 +15,7 @@ module.exports = (req, res) => {
 
     // Check if user exists
     if (!user)
-        return res.render('login', { error: 'Username or password is incorrect' });
+        return res.render('login', { error: 'Username or Password is incorrect' });
 
     // Set session
     req.session.user = user;
