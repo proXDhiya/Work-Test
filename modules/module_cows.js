@@ -40,3 +40,14 @@ exports.setNewCow = (name, birthday, color, breed, motherId) => {
         return false;
     }
 };
+
+
+exports.getCows = () => {
+    // Read File
+    const cows = fs.readFileSync(path.join(__dirname, '../database/cows.json'), 'utf8');
+
+    // Parse JSON
+    const cowsJSON = JSON.parse(cows);
+
+    return cowsJSON;
+};

@@ -1,8 +1,8 @@
 [
     {
         "id": "1",
-        "cow-name": "Bessie",
-        "birth-date": "2015-01-01",
+        "name": "Bessie",
+        "birthday": "2015-01-01",
         "color": "black",
         "breed": "Holstein",
         "mother-id": null,
@@ -26,8 +26,8 @@
     },
     {
         "id": "2",
-        "cow-name": "Moo",
-        "birth-date": "2015-03-01",
+        "name": "Moo",
+        "birthday": "2015-03-01",
         "color": "white",
         "breed": "Holstein",
         "mother-id": null,
@@ -41,24 +41,24 @@
     },
     {
         "id": "3",
-        "cow-name": "Moooooo",
-        "birth-day": "2022-11-01",
+        "name": "Moooooo",
+        "birthday": "2022-11-01",
         "color": "black",
         "breed": "Holstein",
         "mother-id": "1"
     },
     {
         "id": "4",
-        "cow-name": "Rari",
-        "birth-day": "2022-06-02",
+        "name": "Rari",
+        "birthday": "2022-06-02",
         "color": "spotted",
         "breed": "Holstein",
         "mother-id": "3"
     },
     {
         "id": "5",
-        "cow-name": "Rari",
-        "birth-day": "2022-11-04",
+        "name": "Rari",
+        "birthday": "2022-11-04",
         "color": "brown",
         "breed": "Holstein",
         "mother-id": null
