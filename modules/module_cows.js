@@ -51,3 +51,21 @@ exports.getCows = () => {
 
     return cowsJSON;
 };
+
+
+exports.getCowsByAge = () => {
+    // Read File
+    const cows = fs.readFileSync(path.join(__dirname, '../database/cows.json'), 'utf8');
+
+    // Parse JSON
+    const cowsJSON = JSON.parse(cows);
+
+    // Sort cows by age
+    const cowsByAge = cowsJSON.sort((a, b) => {
+        const aDate = new Date(a['birthday']);
+        const bDate = new Date(b['birthday']);
+        return aDate - bDate;
+    });
+
+    return cowsByAge;
+}
