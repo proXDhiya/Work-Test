@@ -54,5 +54,13 @@
         "color": "spotted",
         "breed": "Holstein",
         "mother-id": "3"
+    },
+    {
+        "id": "5",
+        "cow-name": "Rari",
+        "birth-day": "2022-11-04",
+        "color": "brown",
+        "breed": "Holstein",
+        "mother-id": null
     }
 ]

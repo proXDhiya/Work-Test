@@ -14,6 +14,7 @@
     --color-secondary-background: #22A39F;
     --color-warning: #F2C94C;
     --color-error: #f2504a;
+    --color-success: #227ca3;
     /* Spacing */
     --spacing-1: 0.25rem;
     --spacing-2: 0.5rem;
@@ -137,19 +138,29 @@ p > span {
     margin: 0 auto;
 }
 
-.error-container {
+:is(
+    .error-container,
+    .success-container
+) {
     padding: var(--spacing-4) var(--spacing-6);
-    background-color: var(--color-error);
     font-weight: var(--font-weight-bold);
     width: fit-content;
     position: fixed;
     top: -60px;
     right: 50%;
     transform: translateX(50%);
-    animation: error 5s ease-in-out forwards;
+    animation: error-success 5s ease-in-out forwards;
 }
 
-@keyframes error {
+.error-container {
+    background-color: var(--color-error);
+}
+
+.success-container {
+    background-color: var(--color-success);
+}
+
+@keyframes error-success {
     0% {
         top: -60px;
     }
@@ -164,6 +175,9 @@ p > span {
     }
 }
 
-.error-container > p {
+:is(
+    .error-container,
+    .success-container
+) > p {
     color: var(--color-primary-background);
 }
