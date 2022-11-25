@@ -8,35 +8,34 @@ body
             h1.register-cow-h Register Cow  
             form(action="/register-cow", method="POST")
                 .form-group
-                    label(for="cow-name") Cow Name
+                    label(for="name") Cow Name
                         span *
-                    input#cow-name.form-control(type="text", name="cow-name", placeholder="Bessie" required)
+                    input#cow-name.form-control(type="text", name="name", placeholder="Bessie" required)
                 .form-group
-                    label(for="birth-date") Birth Date
+                    label(for="birthday") Birth Date
                         span *
-                    input#birth-date.form-control(type="date", name="birth-date" placeholder="YYYY-MM-DD" required)
+                    input#birth-date.form-control(type="date", name="birthday" placeholder="YYYY-MM-DD" required)
                 .form-group
                     label(for="color") Color
                         span *
                     //- radio buttons for color
                     .form-check
-                        input#color-white.form-check-input(type="radio", name="color", value="white")
+                        input#color-white.form-check-input(type="radio", name="color", value="white" required checked)
                         label.form-check-label(for="color-white") White
-                        input#color-black.form-check-input(type="radio", name="color", value="black")
+                        input#color-black.form-check-input(type="radio", name="color", value="black" required)
                         label.form-check-label(for="color-black") Black
-                        input#color-brown.form-check-input(type="radio", name="color", value="brown")
+                        input#color-brown.form-check-input(type="radio", name="color", value="brown" required)
                         label.form-check-label(for="color-brown") Brown
-                        input#color-spotted.form-check-input(type="radio", name="color", value="spotted")
+                        input#color-spotted.form-check-input(type="radio", name="color", value="spotted" required)
                         label.form-check-label(for="color-spotted") Spotted
                 .form-group
                     label(for="breed") Breed
                         span *
                     input#breed.form-control(type="text", name="breed", placeholder="Holstein" required)
                 .form-group
-                    label(for="mother-id") Mother ID
-                        span *
+                    label(for="motherId") Mother ID
                     //- with regex, only allow numbers and string null
-                    input#mother-id.form-control(type="text", name="mother-id", placeholder="123456789 or null" pattern="([0-9]+|null)" required)
+                    input#mother-id.form-control(type="text", name="motherId", placeholder="123456789 or null")
                 //- submit button
                 button.btn.btn-primary(type="submit") Register Cow
                 
