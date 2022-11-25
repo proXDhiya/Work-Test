@@ -29,9 +29,21 @@ body
                         input#color-spotted.form-check-input(type="radio", name="color", value="spotted" required)
                         label.form-check-label(for="color-spotted") Spotted
                 .form-group
+                    //- label(for="breed") Breed
+                    //-     span *
+                    //- input#breed.form-control(type="text", name="breed", placeholder="Holstein" required)
                     label(for="breed") Breed
                         span *
-                    input#breed.form-control(type="text", name="breed", placeholder="Holstein" required)
+                    input#breed.form-control(list="breeds", name="breed", placeholder="Holstein" required)
+                    datalist#breeds
+                        option(value="Holstein")
+                        option(value="Jersey")
+                        option(value="Guernsey")
+                        option(value="Ayrshire")
+                        option(value="Brown Swiss")
+                        option(value="Red and White")
+                        option(value="Milking Shorthorn")
+                        option(value="Dutch Belted")
                 .form-group
                     label(for="motherId") Mother ID
                     //- with regex, only allow numbers and string null
