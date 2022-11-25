@@ -60,12 +60,15 @@ exports.getCowsByAge = () => {
     // Parse JSON
     const cowsJSON = JSON.parse(cows);
 
-    // Sort cows by age
-    const cowsByAge = cowsJSON.sort((a, b) => {
-        const aDate = new Date(a['birthday']);
-        const bDate = new Date(b['birthday']);
+    // Sort cows by age (youngest first)
+    cowsJSON.sort((a, b) => {
+        const aDate = new Date(a.birthday);
+        const bDate = new Date(b.birthday);
         return aDate - bDate;
     });
 
-    return cowsByAge;
+    // reverse array to get oldest first
+    cowsJSON.reverse();
+
+    return cowsJSON;
 }
