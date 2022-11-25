@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "cow-name": "Bessie",
+        "age": 3,
+        "color": "black",
+        "family": "Holstein",
+        "weight": 1200,
+        "mather-id": null,
+        "vacsinations": [
+            {
+                "id": 1,
+                "name": "Bovine Viral Diarrhea",
+                "date": "2018-01-01"
+            },
+            {
+                "id": 2,
+                "name": "Bovine Respiratory Disease",
+                "date": "2018-04-01"
+            },
+            {
+                "id": 3,
+                "name": "Bovine Leukemia",
+                "date": "2018-09-01"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "cow-name": "Moo",
+        "age": 2,
+        "color": "white",
+        "family": "Holstein",
+        "weight": 1000,
+        "mather-id": null,
+        "vacsinations": [
+            {
+                "id": 1,
+                "name": "Bovine Viral Diarrhea",
+                "date": "2018-02-01"
+            }
+        ]
+    }
+]
