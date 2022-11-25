@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 
 // GET /dashboard
-router.get('/', require('../controllers/get-dashboard'));
+router.get('/', require('../controllers/dashboard/get-dashboard'));
 
 // Export the router
 module.exports = router;

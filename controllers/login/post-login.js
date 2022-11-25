@@ -1,4 +1,4 @@
-const { checkUser } = require('../modules/module_users.js');
+const { checkUser } = require('../../modules/module_users.js');
 
 // Function for post request login
 

@@ -1,7 +1,7 @@
 // Function for post request register cow
 
 module.exports = (req, res) => {
-    if(!require('./session/check-login')(req))
+    if(!require('../session/check-login')(req))
         return res.redirect('/dashboard');
     
     // Get the data from the request body
