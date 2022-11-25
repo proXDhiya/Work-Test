@@ -6,7 +6,7 @@
         "color": "black",
         "breed": "Holstein",
         "mother-id": null,
-        "vacsintions": [
+        "vacsinations": [
             {
                 "id": "1",
                 "name": "Bovine Viral Diarrhea",
@@ -69,6 +69,22 @@
         "birthday": "2011-06-22",
         "color": "brown",
         "breed": "Holstein",
+        "mother-id": null
+    },
+    {
+        "id": "7",
+        "name": "Hmousa",
+        "birthday": "2022-11-03",
+        "color": "spotted",
+        "breed": "Jersey",
+        "mother-id": null
+    },
+    {
+        "id": "8",
+        "name": "i'm a COW ?",
+        "birthday": "2008-07-09",
+        "color": "black",
+        "breed": "Guernsey",
         "mother-id": null
     }
 ]

@@ -12,13 +12,13 @@ body
             h3 Select a Filter :
             .filter
                 a(href="/view-cows/age") Age
-                a(href="/view-cows?breed=Holstein") Breed Holstein
-                a(href="/view-cows?breed=Jersey") Breed Jersey
-                a(href="/view-cows?breed=Guernsey") Breed Guernsey
-                a(href="/view-cows?color=Black") Color Black
-                a(href="/view-cows?color=White") Color White
-                a(href="/view-cows?color=Brown") Color Brown
-                a(href="/view-cows?color=Spotted") Color Spotted
+                a(href="/view-cows/breed/breed=Holstein") Breed Holstein
+                a(href="/view-cows/breed/breed=Jersey") Breed Jersey
+                a(href="/view-cows/breed/breed=Guernsey") Breed Guernsey
+                a(href="/view-cows/color/color=Black") Color Black
+                a(href="/view-cows/color/color=White") Color White
+                a(href="/view-cows/color/color=Brown") Color Brown
+                a(href="/view-cows/color/color=Spotted") Color Spotted
             .table
                 //- if no cows found
                 if cows.length === 0

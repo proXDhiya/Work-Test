@@ -72,3 +72,17 @@ exports.getCowsByAge = () => {
 
     return cowsJSON;
 }
+
+
+exports.getCowsByBreed = (breed) => {
+    // Read File
+    const cows = fs.readFileSync(path.join(__dirname, '../database/cows.json'), 'utf8');
+
+    // Parse JSON
+    const cowsJSON = JSON.parse(cows);
+
+    // Filter cows by breed
+    const filteredCows = cowsJSON.filter(cow => cow.breed === breed);
+
+    return filteredCows;
+};
