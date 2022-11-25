@@ -21,8 +21,8 @@ exports.setNewCow = (name, birthday, color, breed, motherId) => {
     // Create new cow
     const newCow = {
         id: (cowsJSON.length + 1).toString(),
-        "cow-name": name,
-        "birth-day": birthday,
+        "name": name,
+        "birthday": birthday,
         "color": color,
         "breed": breed,
         "mother-id": motherId === '' ? null : motherId,
