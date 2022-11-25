@@ -12,6 +12,8 @@
     --color-secondary-text: #434242;
     --color-primary-background: #F3EFE0;
     --color-secondary-background: #22A39F;
+    --color-warning: #F2C94C;
+    --color-error: #f2504a;
     /* Spacing */
     --spacing-1: 0.25rem;
     --spacing-2: 0.5rem;

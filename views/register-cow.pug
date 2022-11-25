@@ -1,8 +1,43 @@
 include templates/_page-head.pug
+    link(rel="stylesheet", href="/style/register-cow.css")
     title Register Cow
 body
     include templates/components/_header.pug
-    
-    h1 Register Cow
-
+    .container
+        .register-cow-form
+            h1.register-cow-h Register Cow  
+            form(action="/register-cow", method="POST")
+                .form-group
+                    label(for="cow-name") Cow Name
+                        span *
+                    input#cow-name.form-control(type="text", name="cow-name", placeholder="Bessie" required)
+                .form-group
+                    label(for="birth-date") Birth Date
+                        span *
+                    input#birth-date.form-control(type="date", name="birth-date" placeholder="YYYY-MM-DD" required)
+                .form-group
+                    label(for="color") Color
+                        span *
+                    //- radio buttons for color
+                    .form-check
+                        input#color-white.form-check-input(type="radio", name="color", value="white")
+                        label.form-check-label(for="color-white") White
+                        input#color-black.form-check-input(type="radio", name="color", value="black")
+                        label.form-check-label(for="color-black") Black
+                        input#color-brown.form-check-input(type="radio", name="color", value="brown")
+                        label.form-check-label(for="color-brown") Brown
+                        input#color-spotted.form-check-input(type="radio", name="color", value="spotted")
+                        label.form-check-label(for="color-spotted") Spotted
+                .form-group
+                    label(for="breed") Breed
+                        span *
+                    input#breed.form-control(type="text", name="breed", placeholder="Holstein" required)
+                .form-group
+                    label(for="mother-id") Mother ID
+                        span *
+                    //- with regex, only allow numbers and string null
+                    input#mother-id.form-control(type="text", name="mother-id", placeholder="123456789 or null" pattern="([0-9]+|null)" required)
+                //- submit button
+                button.btn.btn-primary(type="submit") Register Cow
+                
     include templates/_page-script.pug

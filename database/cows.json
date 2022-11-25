@@ -2,12 +2,11 @@
     {
         "id": 1,
         "cow-name": "Bessie",
-        "age": 3,
+        "birth-date": "2015-01-01",
         "color": "black",
-        "family": "Holstein",
-        "weight": 1200,
-        "mather-id": null,
-        "vacsinations": [
+        "breed": "Holstein",
+        "mother-id": null,
+        "vacsintions": [
             {
                 "id": 1,
                 "name": "Bovine Viral Diarrhea",
@@ -28,10 +27,9 @@
     {
         "id": 2,
         "cow-name": "Moo",
-        "age": 2,
+        "birth-date": "2015-03-01",
         "color": "white",
-        "family": "Holstein",
-        "weight": 1000,
+        "breed": "Holstein",
         "mather-id": null,
         "vacsinations": [
             {
