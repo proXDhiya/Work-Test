@@ -9,7 +9,8 @@ module.exports = (req, res) => {
 
     // add cow to database
     if (!require('../../modules/module_cows').setNewCow(name, birthday, color, breed, motherId)) {
-        res.session.error = 'Error adding cow to database';
+        // if cow could not be added, return error
+        req.session.error = 'Cow could not be added';
         return res.redirect('/register-cow');
     }
 
