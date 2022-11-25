@@ -6,7 +6,7 @@ module.exports = (req, res) => {
         return res.redirect('/');
 
     // Get all cows from database
-    const cows = require('../../modules/module_cows').getCowsByBreed(req.params.breed);
+    const cows = require('../../modules/module_cows').getCowsByColor(req.params.color);
     
     // Render view cows page
     return res.render('view-cows', {

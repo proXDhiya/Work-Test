@@ -12,5 +12,8 @@ router.get('/age', require('../controllers/view-cows/get-view-cows-age'));
 // GET request for view-cows by breed parameter
 router.get('/breed/:breed', require('../controllers/view-cows/get-view-cows-breed'));
 
+// GET request for view-cows by color parameter
+router.get('/color/:color', require('../controllers/view-cows/get-view-cows-color'));
+
 // Export the router
 module.exports = router;

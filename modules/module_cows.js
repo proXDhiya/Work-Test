@@ -86,3 +86,17 @@ exports.getCowsByBreed = (breed) => {
 
     return filteredCows;
 };
+
+
+exports.getCowsByColor = (color) => {
+    // Read File
+    const cows = fs.readFileSync(path.join(__dirname, '../database/cows.json'), 'utf8');
+
+    // Parse JSON
+    const cowsJSON = JSON.parse(cows);
+
+    // Filter cows by color
+    const filteredCows = cowsJSON.filter(cow => cow.color === color);
+
+    return filteredCows;
+};
