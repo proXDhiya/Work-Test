@@ -63,3 +63,18 @@ exports.getMilkByDateOrder = () => {
 
     return milkJSON;
 };
+
+exports.getMilkByAmountOrder = () => {
+    // Read File
+    const milk = fs.readFileSync(path.join(__dirname, '../database/milk.json'), 'utf8');
+
+    // Parse JSON
+    const milkJSON = JSON.parse(milk);
+
+    // Sort by milkAmount (highest first)
+    milkJSON.sort((a, b) => {
+        return b.milkAmount - a.milkAmount;
+    });
+
+    return milkJSON;
+};
