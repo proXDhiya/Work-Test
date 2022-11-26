@@ -42,6 +42,7 @@ app.use('/register-milk', require('./routers/register-milk'));
 app.use('/view-milk', require('./routers/view-milk'));
 app.use('/register-new-birth', require('./routers/register-new-birth'));
 app.use('/register-vaccination', require('./routers/register-vaccination'));
+app.use('/show-vaccinations', require('./routers/show-vaccinations'));
 app.use('/logout', require('./routers/logout'));
 
 // Listen on port 3000

@@ -1,0 +1,31 @@
+include templates/_page-head.pug
+    link(rel='stylesheet', href='/style/show-vaccinations.css')
+    title show-vaccinations
+body
+    include templates/components/_header.pug
+    .container
+        .main-view-vaccinations
+            h1 View Vaccinations
+            p This is the 
+                span view vaccinations page
+        .view-vaccinations__table
+            .table
+                //- if no vaccinations found
+                if vaccinations.length === 0
+                    //- include templates/components/_no-vaccinations.pug
+                for data in vaccinations || []
+                    .table-vaccine
+                        .table-vaccine__cowId
+                            p Id: 
+                                span #{data.cowId}
+                        .table-vaccine__cowName
+                            p Cow: 
+                                span #{data.cowName}
+                        .table-vaccine__vaccineName
+                            p Vaccine: 
+                                span #{data.name}
+                        .table-vaccine__vaccineDate
+                            p Date: 
+                                span #{data.date}
+
+    include templates/_page-script.pug

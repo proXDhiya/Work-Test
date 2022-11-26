@@ -38,3 +38,33 @@ exports.addVaccineToCow = (cowId, vaccine, date) => {
         return false;
     }
 };
+
+
+exports.getVaccinations = () => {
+    // Read File
+    const cows = fs.readFileSync(path.join(__dirname, '../database/cows.json'), 'utf8');
+
+    // Parse JSON
+    const cowsJSON = JSON.parse(cows);
+
+    // Create array to hold all vaccinations
+    const vaccinations = [];
+
+    // Loop through cows
+    cowsJSON.forEach(cow => {
+        // check if cow has vaccinations
+        if (cow.vaccinations) {
+            // Loop through vaccinations
+            cow.vaccinations.forEach(vaccine => {
+                // Add cowId and cowName to vaccine object
+                vaccine.cowId = cow.id;
+                vaccine.cowName = cow.name;
+
+                // Push vaccine to vaccinations array
+                vaccinations.push(vaccine);
+            });
+        }
+    });
+
+    return vaccinations;
+};

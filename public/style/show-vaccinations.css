@@ -1,0 +1,52 @@
+.main-view-vaccinations {
+    margin: var(--spacing-5) 0;
+}
+
+.view-vaccinations__table {
+    width: 100%;
+    height: fit-content;
+    margin: var(--spacing-6) 0;
+}
+
+.table {
+    width: 100%;
+    height: auto;
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    grid-gap: 15px;
+}
+
+.table-vaccine {
+    display: grid;
+    width: 100%;
+    height: 40px;
+    grid-template-columns: 120px 250px 1fr 250px;
+    outline: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+.table-vaccine:hover {
+    background-color: var(--color-secondary-background);
+}
+
+.table-vaccine:hover > * > p {
+    color: var(--color-primary-background) !important;
+}
+
+.table-vaccine:hover > * > p > span {
+    color: var(--color-primary-background) !important;
+}
+
+.table-vaccine > * {
+    margin-top: 8px;
+}
+
+.table-vaccine__cowId {
+    margin-left: var(--spacing-4);
+}
+
+.table-vaccine__vaccineDate {
+    margin-right: var(--spacing-4);
+    text-align: end;
+}
