@@ -1,0 +1,69 @@
+.main-view-milk {
+    margin: var(--spacing-5) 0;
+}
+
+.view-milk__table {
+    width: 100%;
+    height: fit-content;
+    margin: var(--spacing-6) 0;
+}
+
+.filter {
+    display: grid;
+    grid-template-columns: 100px 100px 1fr;
+    margin: var(--spacing-5) 0;
+}
+
+.filter > a {
+    margin: 0 var(--spacing-4);
+    text-decoration: underline;
+    font-weight: var(--font-weight-bold);
+    transition: all 0.2s ease-in-out;
+}
+
+.filter > a:hover {
+    color: var(--color-secondary-background);
+}
+
+.table {
+    width: 100%;
+    height: auto;
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    grid-gap: 15px;
+}
+
+.table-milk {
+    display: grid;
+    width: 100%;
+    height: 40px;
+    grid-template-columns: 115px 200px 1fr;
+    outline: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+.table-milk:hover {
+    background-color: var(--color-secondary-background);
+}
+
+.table-milk:hover > * > p {
+    color: var(--color-primary-background) !important;
+}
+
+.table-milk:hover > * > p > span {
+    color: var(--color-primary-background) !important;
+}
+
+.table-milk > * {
+    margin-top: 8px;
+}
+
+.table-milk__id > p {
+    margin-left: var(--spacing-4)
+}
+
+.table-milk__amount > p {
+    text-align: end;
+    margin-right: var(--spacing-4);
+}

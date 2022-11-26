@@ -37,3 +37,14 @@ exports.setMilk = (date, milkAmount) => {
         return false;
     }
 };
+
+
+exports.getMilk = () => {
+    // Read File
+    const milk = fs.readFileSync(path.join(__dirname, '../database/milk.json'), 'utf8');
+
+    // Parse JSON
+    const milkJSON = JSON.parse(milk);
+
+    return milkJSON;
+};

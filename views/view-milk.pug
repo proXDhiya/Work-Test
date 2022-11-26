@@ -1,0 +1,32 @@
+include templates/_page-head.pug
+    link(rel="stylesheet", href="/style/view-milk.css")
+    title view-milk
+body
+    include templates/components/_header.pug
+    .container
+        .main-view-milk
+            h1 View Milk
+            p This is the 
+                span view milk page
+        .view-milk__table
+            h3 Select a Filter :
+            .filter
+                a(href="/view-milk/date") Date
+                a(href="/view-milk/amount") Amount
+            .table
+                //- if no milk found
+                if milk.length === 0
+                    include templates/components/_no-milk.pug
+                for m in milk || []
+                    .table-milk
+                        .table-milk__id
+                            p Id: 
+                                span #{m.id}
+                        .table-milk__date
+                            p Date: 
+                                span #{m.date}
+                        .table-milk__amount
+                            p Amount: 
+                                span #{m.milkAmount} Gallons
+
+    include templates/_page-script.pug

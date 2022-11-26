@@ -39,6 +39,7 @@ app.use('/dashboard', require('./routers/dashboard'));
 app.use('/register-cow', require('./routers/register-cow'));
 app.use('/view-cows', require('./routers/view-cows'));
 app.use('/register-milk', require('./routers/register-milk'));
+app.use('/view-milk', require('./routers/view-milk'));
 app.use('/logout', require('./routers/logout'));
 
 // Listen on port 3000
