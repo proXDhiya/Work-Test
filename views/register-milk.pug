@@ -1,0 +1,23 @@
+include templates/_page-head.pug
+    link(rel="stylesheet", href="/style/register-milk.css")
+    title register-milk
+body
+    include templates/components/_header.pug
+    .container
+        .register-milk-form
+            h1.register-milk-h Register Milk
+            form(action="/register-milk", method="POST")
+                .form-group
+                    label(for="date") Date
+                        span *
+                    input#date.form-control(type="date", name="date", placeholder="YYYY-MM-DD" required value=date)
+                .form-group
+                    label(for="milkAmount") Milk Amount (in gallons)
+                        span *
+                    //- input#milk-amount.form-control(type="number", name="milkAmount", placeholder="0.0" required)
+                    //- float number input
+                    input#milk-amount.form-control(type="number", name="milkAmount", step="0.01", placeholder="0.0" required)
+                button.btn.btn-primary(type="submit") Register Milk
+
+    include templates/components/_error.pug
+    include templates/_page-script.pug
