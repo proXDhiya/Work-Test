@@ -14,7 +14,7 @@
     --color-secondary-background: #22A39F;
     --color-warning: #F2C94C;
     --color-error: #f2504a;
-    --color-success: #227ca3;
+    --color-success: #1b9e38;
     /* Spacing */
     --spacing-1: 0.25rem;
     --spacing-2: 0.5rem;
@@ -142,7 +142,7 @@ p > span {
     .error-container,
     .success-container
 ) {
-    padding: var(--spacing-4) var(--spacing-6);
+    padding: var(--spacing-3) var(--spacing-6);
     font-weight: var(--font-weight-bold);
     width: fit-content;
     position: fixed;

@@ -108,6 +108,13 @@
         "birthday": "2022-11-26",
         "color": "brown",
         "breed": "Jersey",
-        "mother-id": "3"
+        "mother-id": "3",
+        "vaccinations": [
+            {
+                "id": 1,
+                "name": "Bovine Leukemia",
+                "date": "2022-11-26"
+            }
+        ]
     }
 ]
