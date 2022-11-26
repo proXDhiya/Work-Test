@@ -94,5 +94,13 @@
         "color": "black",
         "breed": "Guernsey",
         "mother-id": "3"
+    },
+    {
+        "id": "10",
+        "name": "Doli",
+        "birthday": "2022-11-26",
+        "color": "brown",
+        "breed": "Jersey",
+        "mother-id": "3"
     }
 ]
