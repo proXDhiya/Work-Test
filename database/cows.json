@@ -53,7 +53,14 @@
         "birthday": "2022-06-02",
         "color": "spotted",
         "breed": "Holstein",
-        "mother-id": "3"
+        "mother-id": "3",
+        "vaccinations": [
+            {
+                "id": 1,
+                "name": "Bovine Tuberculosis",
+                "date": "2022-11-26"
+            }
+        ]
     },
     {
         "id": "5",

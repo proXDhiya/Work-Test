@@ -100,3 +100,17 @@ exports.getCowsByColor = (color) => {
 
     return filteredCows;
 };
+
+
+exports.getCowById = (id) => {
+    // Read File
+    const cows = fs.readFileSync(path.join(__dirname, '../database/cows.json'), 'utf8');
+
+    // Parse JSON
+    const cowsJSON = JSON.parse(cows);
+
+    // Find cow by id
+    const cow = cowsJSON.find(cow => cow.id === id);
+
+    return cow ? cow : false;
+}
