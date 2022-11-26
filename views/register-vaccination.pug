@@ -1,0 +1,35 @@
+include templates/_page-head.pug
+    link(rel="stylesheet", href="/style/register-vaccination.css")
+    title register-vaccination
+body
+    include templates/components/_header.pug
+    .container
+        .register-vaccination-form
+            h1.register-vaccination-h Register Vaccination
+            form(action="/register-vaccination", method="POST")
+                .form-group
+                    label(for="cowId") Cow ID
+                        span *
+                    input#cow-id.form-control(type="text", name="cowId", placeholder="123456789" required)
+                .form-group
+                    label(for="vaccine") Vaccine
+                        span *
+                    input#vaccine.form-control(list="vaccines", name="vaccine", placeholder="Bovine Viral Diarrhea" required)
+                    datalist#vaccines
+                        option(value="Bovine Viral Diarrhea")
+                        option(value="Bovine Respiratory Disease")
+                        option(value="Bovine Leukemia")
+                        option(value="Bovine Tuberculosis")
+                        option(value="Brucellosis")
+                        option(value="Rabies")
+                        option(value="Clostridium Perfringens")
+                        option(value="Clostridium Tetani")
+                        option(value="Clostridium Chauvoei")
+                .form-group
+                    label(for="date") Date
+                        span *
+                    input#date.form-control(type="date", name="date" placeholder="YYYY-MM-DD" required value=today)
+                button.btn.btn-primary(type="submit") Register Vaccination    
+    
+    include templates/components/_error.pug
+    include templates/_page-script.pug

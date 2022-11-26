@@ -6,7 +6,7 @@
         "color": "black",
         "breed": "Holstein",
         "mother-id": null,
-        "vacsinations": [
+        "vaccinations": [
             {
                 "id": "1",
                 "name": "Bovine Viral Diarrhea",
@@ -31,7 +31,7 @@
         "color": "white",
         "breed": "Holstein",
         "mother-id": null,
-        "vacsinations": [
+        "vaccinations": [
             {
                 "id": "1",
                 "name": "Bovine Viral Diarrhea",
