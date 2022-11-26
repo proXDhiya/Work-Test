@@ -4,6 +4,7 @@ include templates/_page-head.pug
 body
     include templates/components/_header.pug
     .container
+        include templates/components/_return_btn.pug
         .register-vaccination-form
             h1.register-vaccination-h Register Vaccination
             form(action="/register-vaccination", method="POST")

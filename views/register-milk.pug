@@ -4,6 +4,7 @@ include templates/_page-head.pug
 body
     include templates/components/_header.pug
     .container
+        include templates/components/_return_btn.pug
         .register-milk-form
             h1.register-milk-h Register Milk
             form(action="/register-milk", method="POST")

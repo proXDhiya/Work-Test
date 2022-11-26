@@ -4,6 +4,7 @@ include templates/_page-head.pug
 body
     include templates/components/_header.pug
     .container
+        include templates/components/_return_btn.pug
         .register-cow-form
             h1.register-cow-h Register Cow  
             form(action="/register-cow", method="POST")

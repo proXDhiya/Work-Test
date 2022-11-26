@@ -181,3 +181,24 @@ p > span {
 ) > p {
     color: var(--color-primary-background);
 }
+
+.return-btn {
+    position: absolute;
+    top: 100px;
+    right: 19%;
+}
+
+.return-btn > a > ion-icon {
+    font-size: 1.25rem;
+    color: var(--color-primary-text);
+    padding: var(--spacing-3);
+    border-radius: 50%;
+    outline: 2px solid var(--color-secondary-text);
+    transition: all 0.2s ease-in-out;
+}
+
+.return-btn > a > ion-icon:hover {
+    background-color: var(--color-secondary-background);
+    color: var(--color-primary-background);
+    outline-color: var(--color-primary-background);
+}
