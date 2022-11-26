@@ -4,10 +4,10 @@ const express = require('express');
 const router = express.Router();
 
 // GET request for register-milk
-router.get('/', require('../controllers/register-milk/get-register-milk'));
+router.get('/', require('../controllers/register-milk/GET_register-milk'));
 
 // POST request for register-milk
-router.post('/', require('../controllers/register-milk/post-register-milk'));
+router.post('/', require('../controllers/register-milk/POST_register-milk'));
 
 // export the router
 module.exports = router;
